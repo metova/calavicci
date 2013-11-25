@@ -4,7 +4,7 @@ Wrapper to execute a drawable converter to convert high resolution Android resou
 
 ## Installation
 
-    gem install 'calavicci', github: "metova/calavicci"
+    gem install calavicci
 
 ## Usage
 
