@@ -2,7 +2,17 @@ require "calavicci/version"
 require 'optparse'
 
 module Calavicci
+
   class DrawableConverter
+  
+    def root
+      File.expand_path '../..', __FILE__
+    end
+
+    def bin
+      File.join root, 'bin'
+    end
+  
     def scale
       puts 'Scaling...'
       
@@ -32,8 +42,10 @@ module Calavicci
         end
       end
       
+      drawable_convert_python_script = "#{bin}/drawable_convert.py"
+      puts drawable_convert_python_script
       input_directory += "/*.png"
-      python_command = "python bin/drawable_convert.py #{arguments}#{input_directory}"
+      python_command = "python #{drawable_convert_python_script} #{arguments}#{input_directory}"
       
       puts "Executing #{python_command}"
       result = exec(python_command)

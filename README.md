@@ -29,3 +29,7 @@ Or, specify the output directories:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Acknowledgement
+
+The `drawable_convert.py` script has been adapted from the original script found at this GitHub Gist: https://gist.github.com/kmansoft/2771791
