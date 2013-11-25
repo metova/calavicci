@@ -1,24 +1,18 @@
 # Calavicci
 
-TODO: Write a gem description
+Wrapper to execute a drawable converter to convert high resolution Android resources to lower resolution resources.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'calavicci'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install calavicci
+    gem install 'calavicci', github: "metova/calavicci"
 
 ## Usage
 
-TODO: Write usage instructions here
+Give calavicci the largest resolution resources you have. If you do not specify any output directories (`-d` flags), then it will automatically scale to mdpi and hdpi, based on the input directory you give it.
+    calavicci ~/workspace/hello-world-android/res/drawable-xhdpi
+    
+Or, specify the output directories:
+    calavicci -d ~/workspace/hello-world-android/res/drawable-mhdpi -d ~/workspace/hello-world-android/res/drawable-hhdpi ~/workspace/hello-world-android/res/drawable-xhdpi
 
 ## Contributing
 

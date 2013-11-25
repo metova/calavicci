@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Todd Grooms"]
   spec.email         = ["todd.grooms@gmail.com"]
   spec.description   = "The gist for the drawable_convert.py script can be found here: https://gist.github.com/kmansoft/2771791"
-  spec.summary       = "Wrapper to execute a drawable converter to convert xhdpi Android resources to lower resolution resources."
+  spec.summary       = "Wrapper to execute a drawable converter to convert high resolution Android resources to lower resolution resources."
   spec.homepage      = "http://github.com/metova/calavicci"
   spec.license       = "MIT"
 
