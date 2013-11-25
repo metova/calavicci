@@ -4,7 +4,7 @@ Wrapper to execute a drawable converter to convert high resolution Android resou
 
 ## Prerequisites
 
-Must have (ImageMagick)[http://www.imagemagick.org/script/index.php] installed on the machine on which you wish to use this gem. If you're on a Mac, make it easy on yourself and install it via (Homebrew)[http://brew.sh]:
+Must have [ImageMagick](http://www.imagemagick.org/script/index.php) installed on the machine on which you wish to use this gem. If you're on a Mac, make it easy on yourself and install it via [Homebrew](http://brew.sh):
 
     brew install imagemagick
 
