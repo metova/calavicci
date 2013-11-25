@@ -2,6 +2,12 @@
 
 Wrapper to execute a drawable converter to convert high resolution Android resources to lower resolution resources.
 
+## Prerequisites
+
+Must have (ImageMagick)[http://www.imagemagick.org/script/index.php] installed on the machine on which you wish to use this gem. If you're on a Mac, make it easy on yourself and install it via (Homebrew)[http://brew.sh]:
+
+    brew install imagemagick
+
 ## Installation
 
     gem install calavicci
