@@ -30,7 +30,7 @@ class Converter:
         print u'Dst list: {0}'.format(dstList)
         self.mDstList = dstList
 
-    def convert(self, src):
+    def convertsrc(self, src):
         for dstpath in self.mDstList:
             (srcpath, srcname) = os.path.split(src)
             dst = os.path.join(dstpath, srcname)
@@ -81,4 +81,4 @@ if __name__ == "__main__":
         if src.endswith(suffix):
             print u'Skipping 9-patch: {0}'.format(src)
         else:
-            cv.convert(src)
+            cv.convertsrc(src)
