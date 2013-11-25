@@ -8,13 +8,13 @@ Gem::Specification.new do |spec|
   spec.version       = Calavicci::VERSION
   spec.authors       = ["Todd Grooms"]
   spec.email         = ["todd.grooms@gmail.com"]
-  spec.description   = "The gist for the drawable_convert.py script can be found here: https://gist.github.com/kmansoft/2771791"
+  spec.description   = "Wrapper to execute a drawable converter to convert high resolution Android resources to lower resolution resources."
   spec.summary       = "Wrapper to execute a drawable converter to convert high resolution Android resources to lower resolution resources."
   spec.homepage      = "http://github.com/metova/calavicci"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
-  spec.executables   = ["calavicci", "convert", "drawable_convert.py"]
+  spec.executables   = ["calavicci", "drawable_convert.py"]
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 

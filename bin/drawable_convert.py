@@ -49,7 +49,7 @@ class Converter:
         else:
             factor = dstDpi*100/srcDpi
             print u'Converting from {0}dpi to {1}dpi, {2}%'.format(srcDpi, dstDpi, factor)
-            cmd = u'./bin/convert -verbose "{0}" -scale "{2}%" "{1}"'.format(src, dst, factor)
+            cmd = u'convert -verbose "{0}" -scale "{2}%" "{1}"'.format(src, dst, factor)
             out = subprocess.Popen(['sh', '-c', cmd])
             output,error = out.communicate()
 
